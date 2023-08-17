@@ -17,9 +17,19 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: rgb(213, 210, 210);
+    transition: transform 0.1s ease-out;
 
     &--left {
-      left: 0;
+      transform: translateX(-100%);
     }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: rotateZ(-90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
   }
 }
