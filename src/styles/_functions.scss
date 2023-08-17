@@ -1,0 +1,10 @@
+@function fluid-clamp($min_value, $min_width, $max_value, $max_width) {
+  $slope: ($max_value - $min_value) / ($max_width - $min_width);
+  $intercept: $min_value - $slope * $min_width;
+  $preferred_value: $slope * 100;
+  @return clamp(
+    $min_value,
+    calc(#{$preferred_value}vw + #{$intercept}),
+    $max_value
+  );
+}

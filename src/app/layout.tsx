@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { DarkModeContextProvider } from '../components/store/darkMode'
 
 import './globals.css'
 
@@ -17,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <DarkModeContextProvider>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </DarkModeContextProvider>
   )
 }

@@ -8,10 +8,11 @@
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
-  padding: 16px 32px;
+  padding: 16px fluid-clamp(16px, 500px, 32px, 1200px);
+
   &__logo {
-    width: 50px;
-    min-width: 45px;
+    min-width: 40px;
+    width: 40px;
     fill: white;
   }
 
@@ -20,7 +21,8 @@
     margin: 0;
     list-style-type: none;
     display: flex;
-    gap: 32px;
+    gap: 16px;
     color: rgba(255, 255, 255, 0.67);
+    font-size: fluid-clamp(13px, 500px, 16px, 600px);
   }
 }

@@ -1,7 +1,6 @@
-import React from 'react'
-
 import { Logo } from '@/assets/Logo'
 import DarkModeButton from '../UI/DarkModeButton/DarkModeButton'
+
 import './Navbar.scss'
 
 const Navbar = () => {

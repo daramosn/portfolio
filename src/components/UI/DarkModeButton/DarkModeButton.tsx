@@ -1,20 +1,22 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import DarkContext from '@/components/store/darkMode'
 
 import './DarkModeButton.scss'
 
 const DarkModeButton = () => {
-  const [darkMode, setDarkMode] = useState(true)
-
-  const darkModeHandler = () => setDarkMode((prev) => !prev)
+  const { darkMode, onToggleMode } = useContext(DarkContext)
 
   return (
-    <button onClick={darkModeHandler} className="toggle">
-      <span
+    <button onClick={onToggleMode} className="toggle">
+      {/* <span
         className={`toggle__circle ${darkMode && 'toggle__circle--left'}`}
       />
-      <span>☀️</span>
       <span>🌑</span>
+      <span>☀️</span> */}
+
+      {darkMode && <span>🌙</span>}
+      {!darkMode && <span>☀️</span>}
     </button>
   )
 }
