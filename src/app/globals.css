@@ -12,9 +12,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: url('../assets/icons/gggrain.svg'); */
-  /* background-size: cover; */
-  /* background-color: #00223e; */
   background-color: #12121c;
+  /* background: rgb(34, 34, 57);
+  background: radial-gradient(
+    circle,
+    rgba(34, 34, 57, 1) 1%,
+    rgba(18, 18, 28, 1) 68%
+  ); */
+
   color: white;
 }
 

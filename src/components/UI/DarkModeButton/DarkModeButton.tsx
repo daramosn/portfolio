@@ -9,14 +9,14 @@ const DarkModeButton = () => {
 
   return (
     <button onClick={onToggleMode} className="toggle">
-      {/* <span
+      <span
         className={`toggle__circle ${darkMode && 'toggle__circle--left'}`}
       />
-      <span>🌑</span>
-      <span>☀️</span> */}
+      <span>☀️</span>
+      <span>🌙</span>
 
-      {darkMode && <span>🌙</span>}
-      {!darkMode && <span>☀️</span>}
+      {/* {darkMode && <span>🌙</span>}
+      {!darkMode && <span>☀️</span>} */}
     </button>
   )
 }
