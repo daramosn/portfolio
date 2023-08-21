@@ -1,4 +1,4 @@
-import { Logo } from '@/assets/Logo'
+import { Logo } from '@/assets/icons/Logo'
 import DarkModeButton from '../UI/DarkModeButton/DarkModeButton'
 
 import './Navbar.scss'
