@@ -2,8 +2,11 @@
 
 .hero {
   padding: 16px max(32px, calc((100vw - $body-width) / 2));
-  min-height: 88.5svh;
+  min-height: 80vh;
+  min-height: 80svh;
   text-align: center;
+  display: grid;
+  align-content: start;
 
   &__name {
     font-size: fluid-clamp($h4, 500px, $h3, 700px);
@@ -16,7 +19,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin: 96px 0 16px 0;
+    margin: 10svh 0 16px 0;
   }
 
   &__title {
@@ -29,5 +32,16 @@
     font-size: fluid-clamp($h6, 500px, $h5, 700px);
     color: rgb(209, 209, 209);
     margin: 0;
+  }
+
+  &__button {
+    justify-self: center;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    font-size: $h6;
+    color: white;
+    background: linear-gradient(45deg, $orange-900, $pink-700-accent);
+    margin-top: 10svh;
   }
 }

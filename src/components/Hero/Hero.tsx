@@ -7,6 +7,8 @@ const Hero = () => {
       <p className="hero__description">
         Code, create, captivate. Building user-centric experiences
       </p>
+
+      <button className="hero__button">See my work ⬇ </button>
     </main>
   )
 }

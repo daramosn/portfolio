@@ -18,7 +18,7 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
       />
       <circle id="a" cx="120" cy="120" r="120" />
     </defs>
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <g transform="translate(12 40)">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />
@@ -42,7 +42,7 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
           </g>
           <path
             fill="#000"
-            fill-opacity=".1"
+            fillOpacity=".1"
             d="M156 79v23c0 30.928-25.072 56-56 56s-56-25.072-56-56V79v15c0 30.928 25.072 56 56 56s56-25.072 56-56V79Z"
             mask="url(#f)"
           />
@@ -61,7 +61,7 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
           <g fill="#25557C" mask="url(#h)">
             <path d="M0 0h264v110H0z" />
           </g>
-          <g fill="#000" fill-opacity=".16" mask="url(#h)" opacity=".6">
+          <g fill="#000" fillOpacity=".16" mask="url(#h)" opacity=".6">
             <ellipse
               cx="40.5"
               cy="27.848"
@@ -82,7 +82,7 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
             <mask id="j" fill="#fff">
               <use xlinkHref="#i" />
             </mask>
-            <use xlinkHref="#i" fill-opacity=".7" />
+            <use xlinkHref="#i" fillOpacity=".7" />
             <rect
               width="31"
               height="16"
@@ -100,14 +100,14 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
             </g>
           </g>
           <path
-            fill-opacity=".16"
+            fillOpacity=".16"
             d="M120 130c0 4.418 5.373 8 12 8s12-3.582 12-8"
           />
-          <g fill-opacity=".6" transform="translate(76 90)">
+          <g fillOpacity=".6" transform="translate(76 90)">
             <circle cx="30" cy="22" r="6" />
             <circle cx="82" cy="22" r="6" />
           </g>
-          <g fill-opacity=".6" fill-rule="nonzero">
+          <g fillOpacity=".6" fillRule="nonzero">
             <path d="M91.63 99.159c3.915-5.51 14.648-8.598 23.893-6.328a2 2 0 0 0 .954-3.884c-10.737-2.637-23.165.94-28.107 7.894a2 2 0 0 0 3.26 2.318ZM172.37 99.159c-3.915-5.51-14.648-8.598-23.893-6.328a2 2 0 0 1-.954-3.884c10.737-2.637 23.165.94 28.108 7.894a2 2 0 0 1-3.26 2.318Z" />
           </g>
         </g>
@@ -132,7 +132,7 @@ export const Avatar: FC<SVGProps<SVGSVGElement>> = ({ className }) => (
             </g>
             <path
               fill="#000"
-              fill-opacity=".16"
+              fillOpacity=".16"
               d="M175.126 166.898c.715 2.24 1.749 4.333 3.43 5.788 1.62 1.404 4.512 1.06 6.543 1.117 1.672.048 3.346.053 5.016-.02.839-.036 1.213 1.015.534 1.499-.13.092-.26.18-.39.262a39.362 39.362 0 0 1-3.25 1.812c-2.524 1.258-5.188 2.244-7.982 2.734-1.916.337-3.816.4-5.654.177a9.828 9.828 0 0 0 1.699 1.94c1.73 1.501 4.816 1.133 6.983 1.194 1.784.052 3.57.057 5.353-.02.895-.039 1.295 1.084.57 1.601a8.08 8.08 0 0 1-.416.28 41.99 41.99 0 0 1-3.469 1.937c-2.693 1.345-5.536 2.398-8.518 2.922-5.5.966-10.87-.177-15.194-3.708a24.905 24.905 0 0 1-3.381-3.36v-2.442a56.187 56.187 0 0 0 18.126-13.713Zm-93.81-15.304a140.419 140.419 0 0 1-2.31 4.597c-4.795 9.11-10.764 20.602-22.507 21.405-1.088.075-1.519 1.347-.67 1.992 11.12 8.453 36.432 13.6 45.445 11.982a54.359 54.359 0 0 0 7.726-1.96v-8.999a56.208 56.208 0 0 1-27.685-29.017Z"
             />
           </g>
