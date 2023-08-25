@@ -43,5 +43,12 @@
     color: white;
     background: linear-gradient(45deg, $orange-900, $pink-700-accent);
     margin-top: 10svh;
+
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      transform: scale(1.01);
+      font-size: 17px;
+    }
   }
 }

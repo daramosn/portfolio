@@ -5,10 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   padding: 16px fluid-clamp(16px, 500px, 32px, 1200px);
+
+  position: sticky;
+  top: 10px;
+  animation: sticky-navbar linear both;
+  animation-timeline: scroll();
+  animation-range: 0 100px;
 
   &__logo {
     min-width: 40px;
@@ -27,9 +32,59 @@
     gap: fluid-clamp(16px, 600px, 64px, 1200px);
     color: rgba(255, 255, 255, 0.67);
     font-size: fluid-clamp(12px, 500px, 16px, 600px);
+
+    @include media(md) {
+      display: none;
+    }
   }
 
-  & > :nth-child(3) {
-    // display: none;
+  &__dark-button {
+    @include media(md) {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    position: relative;
+
+    &-button {
+      display: grid;
+      gap: 5px;
+      &-bar {
+        width: 28px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      &-active {
+        transform: scale(0.9);
+        & > * {
+          background-color: rgb(135, 135, 135);
+        }
+      }
+    }
+
+    &-menu {
+      position: absolute;
+      z-index: 10;
+      right: -16px;
+      margin-top: 21px;
+      padding: 16px;
+      list-style: none;
+      width: 115px;
+
+      border-radius: 10px;
+      display: grid;
+      justify-items: end;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(0px);
+    }
+
+    @include media(md) {
+      display: block;
+    }
   }
 }

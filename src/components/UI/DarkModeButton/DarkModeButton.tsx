@@ -1,14 +1,18 @@
 'use client'
-import React, { useContext } from 'react'
+import React, { ButtonHTMLAttributes, FC, useContext } from 'react'
 import DarkContext from '@/components/store/darkMode'
 
 import './DarkModeButton.scss'
 
-const DarkModeButton = () => {
+type DarkModeButtonType = ButtonHTMLAttributes<HTMLButtonElement> & {
+  className?: string
+}
+
+const DarkModeButton: FC<DarkModeButtonType> = ({ className }) => {
   const { darkMode, onToggleMode } = useContext(DarkContext)
 
   return (
-    <button onClick={onToggleMode} className="toggle">
+    <button onClick={onToggleMode} className={`toggle ${className}`}>
       <span
         className={`toggle__circle ${darkMode && 'toggle__circle--left'}`}
       />

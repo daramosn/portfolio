@@ -1,28 +1,37 @@
 @keyframes show {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(-90deg);
-    }
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-90deg);
+  }
 }
 
 @keyframes rotation-reverse {
-    0% {
-        transform: rotateZ(-90deg);
-    }
-    100% {
-        transform: rotateZ(0deg);
-    }
+  0% {
+    transform: rotateZ(-90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes sticky-navbar {
+  to {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    font-size: 14px;
+    padding-block: 8px;
+  }
 }
