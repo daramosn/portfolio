@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { DarkModeContextProvider } from '../components/store/darkMode'
+import { DarkModeContextProvider } from '../store/darkMode'
 
 import './globals.css'
 

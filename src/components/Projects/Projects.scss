@@ -1,0 +1,9 @@
+@use '../../styles/styles.scss' as *;
+
+.projects {
+  padding: 16px max(32px, calc((100vw - $body-width) / 2));
+
+  &__title {
+    font-size: $h3;
+  }
+}

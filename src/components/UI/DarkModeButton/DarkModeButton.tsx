@@ -1,6 +1,6 @@
 'use client'
 import React, { ButtonHTMLAttributes, FC, useContext } from 'react'
-import DarkContext from '@/components/store/darkMode'
+import DarkContext from '@/store/darkMode'
 
 import './DarkModeButton.scss'
 
