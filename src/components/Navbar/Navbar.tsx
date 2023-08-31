@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
+
 import { Logo } from '@/assets/icons/Logo'
 import DarkModeButton from '../UI/DarkModeButton/DarkModeButton'
 
@@ -10,15 +12,31 @@ const Navbar = () => {
 
   const showMenuHandler = () => setIsOpen((prevIsOpen) => !prevIsOpen)
 
+  const linksComponents = (
+    <>
+      <li>
+        <Link className="navbar__links--no-format" href="#projects">
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link className="navbar__links--no-format" href="#about-me">
+          About me
+        </Link>
+      </li>
+      <li>
+        <Link className="navbar__links--no-format" href="#contact">
+          Contact
+        </Link>
+      </li>
+    </>
+  )
+
   return (
     <nav className="navbar">
       <Logo className="navbar__logo" />
 
-      <ul className="navbar__links">
-        <li>Projects</li>
-        <li>About me</li>
-        <li>Contact</li>
-      </ul>
+      <ul className="navbar__links">{linksComponents}</ul>
 
       <DarkModeButton className="navbar__dark-button" />
 
@@ -36,9 +54,7 @@ const Navbar = () => {
         {isOpen && (
           <>
             <ul className="navbar__hamburger-menu">
-              <li>Projects</li>
-              <li>About me</li>
-              <li>Contact</li>
+              {linksComponents}
               <li>
                 <DarkModeButton />
               </li>

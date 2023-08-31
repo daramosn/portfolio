@@ -34,6 +34,11 @@
     gap: fluid-clamp(16px, 600px, 64px, 1200px);
     font-size: fluid-clamp(12px, 500px, 16px, 600px);
 
+    &--no-format {
+      color: currentColor;
+      text-decoration: none;
+    }
+
     @include media(md) {
       display: none;
     }
