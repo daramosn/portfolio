@@ -30,8 +30,15 @@
 @keyframes sticky-navbar {
   to {
     background: rgba(255, 255, 255, 0.2);
+    // background: rgba(30, 30, 30, 0.5);
     backdrop-filter: blur(5px);
     font-size: 14px;
-    padding-block: 8px;
+    padding-block: 6px;
+    color: white;
+    text-shadow:
+      0 0 4px #343434,
+      0 0 8px #343434,
+      0 0 16px #343434,
+      0 0 32px #000000;
   }
 }

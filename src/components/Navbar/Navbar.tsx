@@ -15,8 +15,8 @@ const Navbar = () => {
       <Logo className="navbar__logo" />
 
       <ul className="navbar__links">
-        <li>About me</li>
         <li>Projects</li>
+        <li>About me</li>
         <li>Contact</li>
       </ul>
 
@@ -36,8 +36,8 @@ const Navbar = () => {
         {isOpen && (
           <>
             <ul className="navbar__hamburger-menu">
-              <li>About me</li>
               <li>Projects</li>
+              <li>About me</li>
               <li>Contact</li>
               <li>
                 <DarkModeButton />
