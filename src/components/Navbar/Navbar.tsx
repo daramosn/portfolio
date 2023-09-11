@@ -34,7 +34,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Logo className="navbar__logo" />
+      <Link href="#home">
+        <Logo className="navbar__logo" />
+      </Link>
 
       <ul className="navbar__links">{linksComponents}</ul>
 

@@ -1,30 +1,85 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import harmony from '@/assets/images/harmony.png'
+import nissan from '@/assets/images/nissan_frame2.png'
+import therapist from '@/assets/images/therapist22_2.png'
+import { ArrowUpRightIcon } from '@/assets/icons/ArrowUpRightIcon'
+
 import './Projects.scss'
 
 const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h3 className="projects__title">/Projects</h3>
-      <div className="projects__grid">
-        <Link
-          href="https://harmony-estates.vercel.app/"
-          className="projects__grid-item harmony"
-        >
-          <h4 className="projects__name">Harmony Estates</h4>
-        </Link>
 
-        <Link
-          href="https://nissan-dashboard.vercel.app/"
-          className="projects__grid-item nissan"
-        >
-          <h4 className="projects__name">Nissan Dashboard</h4>
-        </Link>
-        <Link
-          href="https://therapist-webpage.vercel.app/"
-          className="projects__grid-item therapy"
-        >
-          <h4 className="projects__name">John Doe Therapyst</h4>
-        </Link>
+      <div className="projects__grid">
+        <article className="card card--harmony">
+          <Image src={harmony} alt="harmony-preview" className="card-image" />
+
+          <div className="card-content">
+            <Link
+              href="https://harmony-estates.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ArrowUpRightIcon className="card-content-link" />
+            </Link>
+
+            <main>
+              <h4 className="card-content-name">Harmony Estates</h4>
+              <p className="card-content-description">
+                Harmony is a web application developed for a real estate
+                company, providing a platform for property listings and related
+                services.
+              </p>
+            </main>
+          </div>
+        </article>
+
+        <article className="card card--nissan">
+          <Image src={nissan} alt="harmony-preview" className="card-image" />
+
+          <div className="card-content">
+            <Link
+              href="https://nissan-dashboard.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ArrowUpRightIcon className="card-content-link" />
+            </Link>
+
+            <main>
+              <h4 className="card-content-name">Nissan Dashboard</h4>
+              <p className="card-content-description">
+                Dashboard created for a test
+              </p>
+            </main>
+          </div>
+        </article>
+
+        <article className="card card--therapist">
+          <Image src={therapist} alt="harmony-preview" className="card-image" />
+
+          <div className="card-content">
+            <Link
+              href="https://therapist-webpage.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ArrowUpRightIcon className="card-content-link" />
+            </Link>
+
+            <main>
+              <h4 className="card-content-name">John Doe therapist</h4>
+              <p className="card-content-description">
+                Web designed to promote the services of a therapist. It provides
+                information about the offered services, contact details, and
+                additional resources related to therapy
+              </p>
+            </main>
+          </div>
+        </article>
       </div>
     </section>
   )

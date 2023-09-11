@@ -18,10 +18,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <DarkModeContextProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </DarkModeContextProvider>
+    <html lang="en">
+      <DarkModeContextProvider>
+        <body className={inter.className} id="home">
+          {children}
+        </body>
+      </DarkModeContextProvider>
+    </html>
   )
 }

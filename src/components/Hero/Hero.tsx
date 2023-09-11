@@ -1,4 +1,7 @@
+import Link from 'next/link'
+
 import './Hero.scss'
+
 const Hero = () => {
   return (
     <main className="hero">
@@ -8,7 +11,9 @@ const Hero = () => {
         Code, create, captivate. Building user-centric experiences
       </p>
 
-      <button className="hero__button">See my work ⬇ </button>
+      <Link className="hero__button" href="#projects">
+        See my work ⬇
+      </Link>
     </main>
   )
 }
