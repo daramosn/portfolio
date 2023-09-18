@@ -1,10 +1,22 @@
 @use '../../styles/styles.scss' as *;
 
 .stack {
-  padding: 16px max(32px, calc((100vw - $body-width) / 2));
+  padding: 32px max(32px, calc((100vw - $body-width) / 2));
   height: 800px;
 
   &__title {
     font-size: $h3;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    &-icon {
+      height: 128px;
+      color: rgb(255, 255, 255);
+    }
   }
 }
