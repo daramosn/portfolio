@@ -9,13 +9,19 @@
   }
 
   &__grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // gap: 60px;
+
+    $icon-size: 160px;
+    display: grid;
+    @include auto-fit-grid($icon-size);
+    gap: 48px;
+    justify-items: center;
 
     &-icon {
-      height: 128px;
+      height: $icon-size;
       color: rgb(255, 255, 255);
     }
   }
